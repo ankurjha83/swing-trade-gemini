@@ -2,7 +2,8 @@ name: Daily Stock Scan
 
 on:
   schedule:
-    - cron: '0 21 * * 1-5' # 4:00 PM EST
+    # Runs every 30 mins, Mon-Fri, from 13:00 to 21:00 UTC (roughly market hours)
+    - cron: '*/30 13-21 * * 1-5'
   workflow_dispatch: 
 
 jobs:
