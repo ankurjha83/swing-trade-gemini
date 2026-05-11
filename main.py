@@ -1,79 +1,95 @@
 import os
+import asyncio
 import pandas as pd
 import yfinance as yf
 import pandas_ta as ta
-import requests
+from telegram import Bot
 from rules import check_buy_signals
 
-# GitHub Secrets
-TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+# --- CONFIGURATION ---
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+TICKERS_FILE = "tickers.txt"
+
+async def send_telegram_msg(message):
+    """Sends a formatted message to your Telegram channel."""
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        print("⚠️ Telegram credentials missing. Skipping message.")
+        return
+    bot = Bot(token=TELEGRAM_TOKEN)
+    try:
+        await bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=message, parse_mode="Markdown")
+    except Exception as e:
+        print(f"❌ Telegram Error: {e}")
 
 def load_tickers():
-    """Reads tickers from tickers.txt, skipping empty lines and comments."""
-    if not os.path.exists("tickers.txt"):
-        print("❌ tickers.txt not found! Please create it.")
+    """Reads the tickers.txt file and returns a clean list of symbols."""
+    if not os.path.exists(TICKERS_FILE):
+        print(f"❌ Error: {TICKERS_FILE} not found!")
         return []
-    
-    with open("tickers.txt", "r") as f:
-        # Read lines, strip whitespace, and ignore empty lines or lines starting with '#'
-        tickers = [line.strip().upper() for line in f if line.strip() and not line.startswith("#")]
-    return tickers
+    with open(TICKERS_FILE, "r") as f:
+        return [line.strip().upper() for line in f if line.strip() and not line.startswith("#")]
 
-def send_telegram_msg(message):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    payload = {"chat_id": str(CHAT_ID).strip(), "text": message, "parse_mode": "Markdown"}
-    try:
-        requests.post(url, json=payload)
-    except Exception as e:
-        print(f"Telegram error: {e}")
-
-def run_scanner():
+async def run_scanner():
     tickers = load_tickers()
-    print(f"🚀 Starting scan for {len(tickers)} stocks...")
+    print(f"🚀 Starting Advanced Scan for {len(tickers)} stocks...")
+    
     candidates = []
-
+    
     for symbol in tickers:
         try:
-            # Download data
-            df = yf.download(symbol, period="90d", interval="1d", progress=False)
+            # 1. Download Data (150d period gives indicators enough 'runway' to calculate)
+            df = yf.download(symbol, period="150d", interval="1d", progress=False)
             
-            # --- THE HEARTBEAT CHECK ---
-            if df.empty:
-                print(f"⚠️ {symbol}: Download failed (Empty DataFrame)")
+            if df.empty or len(df) < 50:
+                print(f"⚠️ {symbol}: Skipping (Insufficient Data)")
                 continue
-            
-            # Flatten columns for new yfinance versions
+
+            # Flatten MultiIndex columns if necessary (common in newer yfinance versions)
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
 
-            # Calculate Indicators
-            df['RSI'] = ta.rsi(df['Close'], length=14)
-            df['SMA20'] = ta.sma(df['Close'], length=20)
-            df['SMA50'] = ta.sma(df['Close'], length=50)
-            df['VolAvg'] = ta.sma(df['Volume'], length=10)
-
-            # Get the latest values
-            current_price = df['Close'].iloc[-1]
-            current_rsi = df['RSI'].iloc[-1]
+            # 2. CALCULATE ADVANCED INDICATORS
+            # Bollinger Bands
+            bbands = df.ta.bbands(length=20, std=2)
+            df['BBU'] = bbands['BBU_20_2.0']
+            df['BBL'] = bbands['BBL_20_2.0']
             
-            # This line will show up in your GitHub Action logs!
-            print(f"📊 {symbol}: Price=${current_price:.2f} | RSI={current_rsi:.1f}")
+            # Trend & Momentum
+            df['RSI'] = df.ta.rsi(length=14)
+            df['ATR'] = df.ta.atr(length=14)
+            
+            # ADX (Average Directional Index)
+            adx_data = df.ta.adx(length=14)
+            df['ADX'] = adx_data['ADX_14']
+            
+            # MACD
+            macd_data = df.ta.macd()
+            df['MACD'] = macd_data['MACD_12_26_9']
+            
+            # Volume Moving Average (20-day)
+            df['VolAvg'] = df.ta.sma(df['Volume'], length=20)
 
-            # Run your rules.py check
+            # 3. RUN RULES ENGINE
             if check_buy_signals(df):
-                candidates.append(f"🔥 *{symbol}* @ ${float(current_price):.2f}")
+                price = df['Close'].iloc[-1]
+                rsi = df['RSI'].iloc[-1]
+                candidates.append(f"🎯 *{symbol}* Breakout!\n💰 Price: ${price:.2f}\n📈 RSI: {rsi:.1f}")
                 print(f"✅ MATCH FOUND: {symbol}")
+            else:
+                # Debug line to see what's happening in GitHub logs
+                last = df.iloc[-1]
+                print(f"📊 {symbol}: ${last['Close']:.2f} | RSI: {last['RSI']:.1f} | ADX: {last['ADX']:.1f}")
 
         except Exception as e:
-            print(f"❌ Error with {symbol}: {e}")
+            print(f"❌ Error processing {symbol}: {e}")
 
-    # Final Report
+    # 4. FINAL REPORTING
     if candidates:
-        msg = "🎯 *Momentum Candidates Found:*\n\n" + "\n".join(candidates)
-        send_telegram_msg(msg)
+        summary = "🔥 *MOMENTUM ALERTS FOUND* 🔥\n\n" + "\n\n".join(candidates)
+        await send_telegram_msg(summary)
     else:
-        send_telegram_msg(f"📭 Scan complete: No matches found in {len(tickers)} stocks.")
+        print("📭 Scan complete. No stocks met the multi-factor criteria.")
 
 if __name__ == "__main__":
-    run_scanner()
+    asyncio.run(run_scanner())
