@@ -19,8 +19,23 @@ def send_telegram_msg(message):
     requests.get(url)
 
 def run_scanner():
-    tickers = ["AAPL", "MSFT", "NVDA", "TSLA", "AMD", "GOOGL", "META"] # Add or use a list puller
+    import pandas as pd
+
+def get_sp500_tickers():
+    # Pulls the official list of S&P 500 companies
+    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    tables = pd.read_html(url)
+    df = tables[0]
+    # Standardize tickers (yfinance prefers '-' over '.' for symbols like BRK.B)
+    tickers = df['Symbol'].str.replace('.', '-', regex=False).tolist()
+    return tickers
+
+def run_scanner():
+    tickers = get_sp500_tickers()
     candidates = []
+    print(f"Starting scan of {len(tickers)} stocks...")
+    
+    # ... rest of your loop logic ...
 
     for symbol in tickers:
         try:
@@ -43,7 +58,8 @@ def run_scanner():
         msg = "🎯 *Buy Rules Triggered:*\n\n" + "\n".join(candidates)
         send_telegram_msg(msg)
     else:
-        print("No matches found today.")
+        # This confirms the script is working perfectly even if the market is quiet
+        send_telegram_msg("📭 Scanner ran successfully, but no S&P 500 stocks met your 5% setup today.")
 
 if __name__ == "__main__":
     run_scanner()
