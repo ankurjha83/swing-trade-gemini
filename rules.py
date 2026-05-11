@@ -24,13 +24,13 @@ def check_buy_signals(df):
     # We want strong strength (55+), but we allow up to 80 to catch leaders 
     # like NVDA and AMD that stay "hot" during major runs.
     rsi_value = last['RSI']
-    momentum_ok = 55 < rsi_value < 80
+    momentum_ok = 55 < rsi_value < 85
     
     # 4. VOLUME PARAMETERS (The "Institutional Footprint")
     # Requires a minimum of 1 million shares daily and a relative volume spike.
     # A multiplier of 1.2x confirms there is "fresh money" entering.
     min_volume = 1_000_000
-    rel_vol_threshold = 1.2
+    rel_vol_threshold = 0.8
     relative_volume = last['Volume'] / last['VolAvg']
     
     volume_ok = (last['Volume'] > min_volume) and (relative_volume > rel_vol_threshold)
