@@ -6,7 +6,8 @@ def get_enriched_data(symbol: str):
     """Downloads and calculates indicators using the most stable function calls."""
     try:
         # 1. Download with a bit more history for stability
-        df = yf.download(symbol, period="150d", interval="1d", progress=False)
+        # df = yf.download(symbol, period="150d", interval="1d", progress=False)
+        df = yf.download(symbol, period="5d", interval="15m", progress=False)
         if df.empty or len(df) < 50:
             return None
 
