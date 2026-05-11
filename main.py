@@ -29,40 +29,51 @@ def send_telegram_msg(message):
         print(f"Telegram error: {e}")
 
 def run_scanner():
-    tickers = load_tickers() # <--- Now loading from the file!
-    if not tickers:
-        print("No tickers to scan.")
-        return
-
+    tickers = load_tickers()
     print(f"🚀 Starting scan for {len(tickers)} stocks...")
     candidates = []
 
     for symbol in tickers:
         try:
+            # Download data
             df = yf.download(symbol, period="90d", interval="1d", progress=False)
-            if df.empty or len(df) < 50: continue
-
+            
+            # --- THE HEARTBEAT CHECK ---
+            if df.empty:
+                print(f"⚠️ {symbol}: Download failed (Empty DataFrame)")
+                continue
+            
+            # Flatten columns for new yfinance versions
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
 
+            # Calculate Indicators
             df['RSI'] = ta.rsi(df['Close'], length=14)
             df['SMA20'] = ta.sma(df['Close'], length=20)
             df['SMA50'] = ta.sma(df['Close'], length=50)
             df['VolAvg'] = ta.sma(df['Volume'], length=10)
 
+            # Get the latest values
+            current_price = df['Close'].iloc[-1]
+            current_rsi = df['RSI'].iloc[-1]
+            
+            # This line will show up in your GitHub Action logs!
+            print(f"📊 {symbol}: Price=${current_price:.2f} | RSI={current_rsi:.1f}")
+
+            # Run your rules.py check
             if check_buy_signals(df):
-                price = df['Close'].iloc[-1]
-                candidates.append(f"🔥 *{symbol}* @ ${float(price):.2f}")
-                print(f"✅ Match: {symbol}")
+                candidates.append(f"🔥 *{symbol}* @ ${float(current_price):.2f}")
+                print(f"✅ MATCH FOUND: {symbol}")
 
         except Exception as e:
-            print(f"Error processing {symbol}: {e}")
+            print(f"❌ Error with {symbol}: {e}")
 
+    # Final Report
     if candidates:
         msg = "🎯 *Momentum Candidates Found:*\n\n" + "\n".join(candidates)
         send_telegram_msg(msg)
     else:
-        send_telegram_msg(f"📭 Scan complete: No matches found in {len(tickers)} stocks today.")
+        send_telegram_msg(f"📭 Scan complete: No matches found in {len(tickers)} stocks.")
 
 if __name__ == "__main__":
     run_scanner()
