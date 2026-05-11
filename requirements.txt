@@ -1,6 +1,7 @@
 yfinance>=1.3.0
 pandas>=2.2.0
-pandas-ta-classic
+# Use the direct URL to the last stable OSS version to ensure the namespace works
+https://www.pandas-ta.dev/assets/zip/pandas_ta-0.4.25b0.tar.gz
 python-telegram-bot
 requests
 lxml
