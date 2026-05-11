@@ -5,11 +5,10 @@ import pandas_ta as ta
 import requests
 from rules import check_buy_signals
 
-# GitHub Secrets - Ensure these are set in your Repo Settings
+# GitHub Secrets
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Your Momentum Watchlist
 TICKERS = [
     "ACHR", "AMD", "AMZN", "COHR", "CRWD", "IONQ", "META", "MSFT", "MSTR", 
     "MU", "NET", "NFLX", "NVDA", "NIO", "PLTR", "PSTG", "QBTS", "QCOM", "QUBT", 
@@ -19,14 +18,14 @@ TICKERS = [
 ]
 
 def send_telegram_msg(message):
-    """Sends a notification via Telegram using a robust POST request."""
     if not TOKEN or not CHAT_ID:
-        print("Error: TELEGRAM_TOKEN or TELEGRAM_CHAT_ID not set in Secrets.")
+        print("Missing Telegram Secrets.")
         return
-
+    
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    # Ensure CHAT_ID is handled as a string/integer correctly
     payload = {
-        "chat_id": CHAT_ID,
+        "chat_id": str(CHAT_ID).strip(),
         "text": message,
         "parse_mode": "Markdown"
     }
@@ -34,11 +33,11 @@ def send_telegram_msg(message):
     try:
         response = requests.post(url, json=payload)
         if response.status_code == 200:
-            print("Telegram message sent successfully.")
+            print("🚀 Message sent successfully!")
         else:
-            print(f"Telegram failed. Code: {response.status_code}, Response: {response.text}")
+            print(f"❌ Telegram Error {response.status_code}: {response.text}")
     except Exception as e:
-        print(f"Telegram connection error: {e}")
+        print(f"❌ Connection Error: {e}")
 
 def run_scanner():
     print(f"🚀 Starting scan for {len(TICKERS)} momentum stocks...")
@@ -46,43 +45,32 @@ def run_scanner():
 
     for symbol in TICKERS:
         try:
-            # Download 90 days to ensure plenty of overhead for SMAs
             df = yf.download(symbol, period="90d", interval="1d", progress=False)
-            
-            if df.empty or len(df) < 50:
-                print(f"Skipping {symbol}: Insufficient data.")
-                continue
+            if df.empty or len(df) < 50: continue
 
-            # --- THE FIX FOR "Identically-labeled Series" ERROR ---
-            # Flatten the MultiIndex columns returned by new yfinance versions
+            # Flatten MultiIndex for new yfinance versions
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
-            # ------------------------------------------------------
 
-            # Technical Indicator Calculations
+            # Technicals
             df['RSI'] = ta.rsi(df['Close'], length=14)
             df['SMA20'] = ta.sma(df['Close'], length=20)
             df['SMA50'] = ta.sma(df['Close'], length=50)
             df['VolAvg'] = ta.sma(df['Volume'], length=10)
 
-            # Check logic in rules.py
             if check_buy_signals(df):
-                # .iloc[-1] gets the most recent closing price
                 price = df['Close'].iloc[-1]
                 candidates.append(f"🔥 *{symbol}* @ ${float(price):.2f}")
-                print(f"✅ Match Found: {symbol}")
+                print(f"✅ Match: {symbol}")
 
         except Exception as e:
             print(f"Error processing {symbol}: {e}")
 
-    # Final Output Logic
     if candidates:
         msg = "🎯 *Momentum Candidates Found:*\n\n" + "\n".join(candidates)
         send_telegram_msg(msg)
     else:
-        send_telegram_msg("📭 Scan complete: No stocks in your custom list matched today.")
-    
-    print("Scanner execution finished.")
+        send_telegram_msg("📭 Scan complete: No momentum matches today.")
 
 if __name__ == "__main__":
     run_scanner()
