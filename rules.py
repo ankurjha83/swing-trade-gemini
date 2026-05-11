@@ -15,7 +15,7 @@ def check_buy_signals(df):
     # 1. MOMENTUM PARAMETERS
     rsi_value = last['RSI']
     rsi_min = 50
-    rsi_max = 65
+    rsi_max = 70
     
     # 2. TREND PARAMETERS
     above_sma20 = price > last['SMA20']
@@ -23,7 +23,7 @@ def check_buy_signals(df):
     
     # 3. VOLUME PARAMETERS
     min_volume = 1_000_000
-    rel_vol_threshold = 1.5
+    rel_vol_threshold = 1.2
     relative_volume = last['Volume'] / last['VolAvg']
     
     # --- LOGIC TRIGGER ---
