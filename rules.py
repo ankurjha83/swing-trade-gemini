@@ -1,40 +1,78 @@
-# rules.py
+import pandas as pd
 
-def check_buy_signals(df):
+
+def check_buy_signals(df: pd.DataFrame) -> bool:
     """
-    Finalized Momentum Strategy for a 5% Profit Target.
+    Multi-Factor Breakout System
+
+    Returns True when the latest candle confirms:
+    1. Bollinger Band upside breakout
+    2. Strong trend via ADX
+    3. ATR-supported 5% target potential
+    4. RSI momentum without blow-off extension
+    5. Relative volume confirmation
     """
-    # 1. DATA SAFETY CHECK
-    # Ensure we have enough historical data to calculate moving averages (50 days minimum)
-    if len(df) < 50:
+
+    required_columns = [
+        "Close",
+        "RSI",
+        "BBU",
+        "BBL",
+        "ATR",
+        "ADX",
+        "MACD",
+        "Volume",
+        "VolAvg",
+    ]
+
+    if df is None or df.empty:
         return False
 
-    # Get the most recent data row
-    last = df.iloc[-1]
-    
-    # 2. TREND FILTER (The "Uptrend" Rule)
-    # Price MUST be above the 20-day and 50-day Simple Moving Averages.
-    # This ensures we only trade stocks with institutional support.
-    price = last['Close']
-    above_sma20 = price > last['SMA20']
-    above_sma50 = price > last['SMA50']
-    
-    # 3. MOMENTUM PARAMETERS (The "RSI Sweet Spot")
-    # RSI between 55 and 80.
-    # We want strong strength (55+), but we allow up to 80 to catch leaders 
-    # like NVDA and AMD that stay "hot" during major runs.
-    rsi_value = last['RSI']
-    momentum_ok = 55 < rsi_value < 85
-    
-    # 4. VOLUME PARAMETERS (The "Institutional Footprint")
-    # Requires a minimum of 1 million shares daily and a relative volume spike.
-    # A multiplier of 1.2x confirms there is "fresh money" entering.
-    min_volume = 1_000_000
-    rel_vol_threshold = 0.8
-    relative_volume = last['Volume'] / last['VolAvg']
-    
-    volume_ok = (last['Volume'] > min_volume) and (relative_volume > rel_vol_threshold)
+    if len(df) < 2:
+        return False
 
-    # --- THE MASTER TRIGGER ---
-    # Only return True if all criteria are perfectly aligned.
-    return momentum_ok and above_sma20 and above_sma50 and volume_ok
+    for col in required_columns:
+        if col not in df.columns:
+            return False
+
+    df = df.copy()
+    df = df[required_columns].dropna()
+
+    if len(df) < 2:
+        return False
+
+    prev = df.iloc[-2]
+    curr = df.iloc[-1]
+
+    close = curr["Close"]
+    prev_close = prev["Close"]
+
+    if close <= 0:
+        return False
+
+    squeeze_breakout = (
+        prev_close <= prev["BBU"]
+        and close > curr["BBU"]
+    )
+
+    trend_confirmation = curr["ADX"] > 25
+
+    atr_guard = (curr["ATR"] * 2) >= (close * 0.05)
+
+    momentum_confirmation = 60 <= curr["RSI"] <= 82
+
+    macd_confirmation = curr["MACD"] > 0
+
+    relative_volume_confirmation = (
+        curr["VolAvg"] > 0
+        and curr["Volume"] >= curr["VolAvg"] * 1.3
+    )
+
+    return bool(
+        squeeze_breakout
+        and trend_confirmation
+        and atr_guard
+        and momentum_confirmation
+        and macd_confirmation
+        and relative_volume_confirmation
+    )
