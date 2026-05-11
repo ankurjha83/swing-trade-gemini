@@ -9,50 +9,42 @@ from rules import check_buy_signals
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-TICKERS = [
-    "ACHR", "AMD", "AMZN", "COHR", "CRWD", "IONQ", "META", "MSFT", "MSTR", 
-    "MU", "NET", "NFLX", "NVDA", "NIO", "PLTR", "PSTG", "QBTS", "QCOM", "QUBT", 
-    "RGTI", "SHOP", "SMCI", "TSLA", "TSM", "RKLB", "AAPL", "JOBY", "AVGO", 
-    "MRVL", "ARM", "ANET", "PANW", "ASTS", "KTOS", "SNOW", "DDOG", "CCJ", 
-    "GEV", "UBER", "APP"
-]
+def load_tickers():
+    """Reads tickers from tickers.txt, skipping empty lines and comments."""
+    if not os.path.exists("tickers.txt"):
+        print("❌ tickers.txt not found! Please create it.")
+        return []
+    
+    with open("tickers.txt", "r") as f:
+        # Read lines, strip whitespace, and ignore empty lines or lines starting with '#'
+        tickers = [line.strip().upper() for line in f if line.strip() and not line.startswith("#")]
+    return tickers
 
 def send_telegram_msg(message):
-    if not TOKEN or not CHAT_ID:
-        print("Missing Telegram Secrets.")
-        return
-    
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    # Ensure CHAT_ID is handled as a string/integer correctly
-    payload = {
-        "chat_id": str(CHAT_ID).strip(),
-        "text": message,
-        "parse_mode": "Markdown"
-    }
-    
+    payload = {"chat_id": str(CHAT_ID).strip(), "text": message, "parse_mode": "Markdown"}
     try:
-        response = requests.post(url, json=payload)
-        if response.status_code == 200:
-            print("🚀 Message sent successfully!")
-        else:
-            print(f"❌ Telegram Error {response.status_code}: {response.text}")
+        requests.post(url, json=payload)
     except Exception as e:
-        print(f"❌ Connection Error: {e}")
+        print(f"Telegram error: {e}")
 
 def run_scanner():
-    print(f"🚀 Starting scan for {len(TICKERS)} momentum stocks...")
+    tickers = load_tickers() # <--- Now loading from the file!
+    if not tickers:
+        print("No tickers to scan.")
+        return
+
+    print(f"🚀 Starting scan for {len(tickers)} stocks...")
     candidates = []
 
-    for symbol in TICKERS:
+    for symbol in tickers:
         try:
             df = yf.download(symbol, period="90d", interval="1d", progress=False)
             if df.empty or len(df) < 50: continue
 
-            # Flatten MultiIndex for new yfinance versions
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
 
-            # Technicals
             df['RSI'] = ta.rsi(df['Close'], length=14)
             df['SMA20'] = ta.sma(df['Close'], length=20)
             df['SMA50'] = ta.sma(df['Close'], length=50)
@@ -70,7 +62,7 @@ def run_scanner():
         msg = "🎯 *Momentum Candidates Found:*\n\n" + "\n".join(candidates)
         send_telegram_msg(msg)
     else:
-        send_telegram_msg("📭 Scan complete: No momentum matches today.")
+        send_telegram_msg(f"📭 Scan complete: No matches found in {len(tickers)} stocks today.")
 
 if __name__ == "__main__":
     run_scanner()
