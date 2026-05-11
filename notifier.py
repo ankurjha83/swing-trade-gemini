@@ -9,18 +9,27 @@ CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 async def send_scan_report(matches, total_scanned):
     """
     Decoupled notification function. 
-    Edit this to change formatting or switch platforms (Telegram, ClickUp, etc.)
+    Sends a report to Telegram regardless of whether matches were found.
     """
+    
+    # --- 1. CASE: NO SIGNALS DETECTED ---
     if not matches:
-        # Optional: Send a 'No signals' update or just log it
-        summary = f"📭 *Daily Scan Complete*\nNo matches found across {total_scanned} stocks."
-        print(summary) 
-        # await _deliver_telegram(summary) # Uncomment if you want 'No Signal' alerts
+        summary = (
+            f"📡 *System Status: Active*\n"
+            f"━━━━━━━━━━━━━━━━━━\n"
+            f"🔍 Scanned `{total_scanned}` stocks.\n"
+            f"⚖️ Result: No breakout signals detected.\n"
+            f"✅ Strategy: 15m Squeeze Hunter"
+        )
+        print(f"Log: Scan complete. {total_scanned} stocks checked. No matches.")
+        
+        # We now explicitly call the delivery method here
+        await _deliver_telegram(summary)
         return
 
-    # --- FORMATTING LOGIC ---
-    header = f"🚀 *MOMENTUM ALERT* ({len(matches)} signals found)\n"
-    divider = "───────────────────\n"
+    # --- 2. CASE: MOMENTUM SIGNALS FOUND ---
+    header = f"🔥 *MOMENTUM ALERT* ({len(matches)} found)\n"
+    divider = "━━━━━━━━━━━━━━━━━━\n"
     body = "\n\n".join(matches)
     footer = f"\n\n📊 Total Scanned: {total_scanned}"
     
@@ -31,9 +40,12 @@ async def send_scan_report(matches, total_scanned):
 
 async def _deliver_telegram(text):
     """Private method to handle Telegram-specific delivery."""
-    if TOKEN and CHAT_ID:
-        try:
-            bot = Bot(TOKEN)
-            await bot.send_message(CHAT_ID, text, parse_mode="Markdown")
-        except Exception as e:
-            print(f"❌ Notification Delivery Error: {e}")
+    if not TOKEN or not CHAT_ID:
+        print("⚠️ Telegram Credentials missing. Check your Secrets.")
+        return
+
+    try:
+        bot = Bot(TOKEN)
+        await bot.send_message(chat_id=CHAT_ID, text=text, parse_mode="Markdown")
+    except Exception as e:
+        print(f"❌ Notification Delivery Error: {e}")
