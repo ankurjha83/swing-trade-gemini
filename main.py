@@ -1,47 +1,47 @@
 import os
+import pandas as pd
 import yfinance as yf
 import pandas_ta as ta
 import requests
 from rules import check_buy_signals
 
-# GitHub Secrets will be loaded here
+# GitHub Secrets
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
-# Pull S&P 500 Tickers automatically
-def get_sp500_tickers():
-    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-    tables = pd.read_html(url)
-    return tables[0]['Symbol'].tolist()
 
 def send_telegram_msg(message):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}&parse_mode=Markdown"
     requests.get(url)
 
-def run_scanner():
-    import pandas as pd
-
 def get_sp500_tickers():
-    # Pulls the official list of S&P 500 companies
+    """Pulls current S&P 500 tickers from Wikipedia."""
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-    tables = pd.read_html(url)
+    # Wikipedia blocks simple bots, so we add a 'User-Agent' header
+    headers = {"User-Agent": "Mozilla/5.0"}
+    response = requests.get(url, headers=headers)
+    
+    # Now we use 'pd' (it will work because it's imported at the top!)
+    tables = pd.read_html(response.text)
     df = tables[0]
-    # Standardize tickers (yfinance prefers '-' over '.' for symbols like BRK.B)
+    
+    # Standardize symbols (yfinance likes '-' instead of '.')
     tickers = df['Symbol'].str.replace('.', '-', regex=False).tolist()
     return tickers
 
 def run_scanner():
+    print("🔄 Starting S&P 500 Scan...")
     tickers = get_sp500_tickers()
     candidates = []
-    print(f"Starting scan of {len(tickers)} stocks...")
-    
-    # ... rest of your loop logic ...
 
-    for symbol in tickers:
+    # Let's just scan the first 50 to keep it fast for this test
+    # Once it works, remove the [:50] to scan all 500
+    for symbol in tickers[:50]: 
         try:
             df = yf.download(symbol, period="60d", interval="1d", progress=False)
             
-            # Pre-calculate indicators for the rules file
+            if df.empty or len(df) < 20: continue
+
+            # Technical Indicators
             df['RSI'] = ta.rsi(df['Close'], length=14)
             df['SMA20'] = ta.sma(df['Close'], length=20)
             df['SMA50'] = ta.sma(df['Close'], length=50)
@@ -52,14 +52,14 @@ def run_scanner():
                 candidates.append(f"🚀 *{symbol}* @ ${price:.2f}")
 
         except Exception as e:
-            print(f"Error processing {symbol}: {e}")
+            print(f"Skipping {symbol}: {e}")
 
+    # Final Notification
     if candidates:
-        msg = "🎯 *Buy Rules Triggered:*\n\n" + "\n".join(candidates)
+        msg = "🎯 *Momentum Candidates Found:*\n\n" + "\n".join(candidates)
         send_telegram_msg(msg)
     else:
-        # This confirms the script is working perfectly even if the market is quiet
-        send_telegram_msg("📭 Scanner ran successfully, but no S&P 500 stocks met your 5% setup today.")
+        send_telegram_msg("📭 Scan complete: No S&P 500 stocks met the criteria today.")
 
 if __name__ == "__main__":
     run_scanner()
