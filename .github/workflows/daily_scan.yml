@@ -2,18 +2,18 @@ name: Daily Stock Scan
 
 on:
   schedule:
-    - cron: '0 21 * * 1-5' # Runs at 4:00 PM EST (21:00 UTC) Mon-Fri
-  workflow_dispatch: # Allows manual run for testing
+    - cron: '0 21 * * 1-5' # 4:00 PM EST
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Updated to v4 for 2026 compatibility
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Updated to v5
         with:
           python-version: '3.12'
 
@@ -26,4 +26,6 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # THIS IS THE CRITICAL FIX:
+          PYTHONPATH: ${{ github.workspace }} 
         run: python main.py
