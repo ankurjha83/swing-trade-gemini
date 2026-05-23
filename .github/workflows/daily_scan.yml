@@ -25,8 +25,8 @@ jobs:
 
       - name: Run Scanner
         env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TOKEN: ${{ secrets.BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.CHAT_ID }}
           # THIS IS THE CRITICAL FIX:
           PYTHONPATH: ${{ github.workspace }} 
         run: python main.py
