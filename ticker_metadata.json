@@ -1,0 +1,260 @@
+{
+  "NVDA": {
+    "company_name": "NVIDIA",
+    "aliases": ["NVIDIA", "NVDA"]
+  },
+  "PLTR": {
+    "company_name": "Palantir",
+    "aliases": ["Palantir", "PLTR"]
+  },
+  "AMD": {
+    "company_name": "AMD",
+    "aliases": ["AMD", "Advanced Micro Devices"]
+  },
+  "AVGO": {
+    "company_name": "Broadcom",
+    "aliases": ["Broadcom", "AVGO"]
+  },
+  "SMCI": {
+    "company_name": "Super Micro Computer",
+    "aliases": ["Super Micro", "SMCI"]
+  },
+  "ARM": {
+    "company_name": "Arm Holdings",
+    "aliases": ["Arm", "ARM"]
+  },
+  "MRVL": {
+    "company_name": "Marvell",
+    "aliases": ["Marvell", "MRVL"]
+  },
+  "TSM": {
+    "company_name": "TSMC",
+    "aliases": ["TSMC", "Taiwan Semiconductor", "TSM"]
+  },
+  "MU": {
+    "company_name": "Micron",
+    "aliases": ["Micron", "MU"]
+  },
+  "ASML": {
+    "company_name": "ASML",
+    "aliases": ["ASML"]
+  },
+  "AMAT": {
+    "company_name": "Applied Materials",
+    "aliases": ["Applied Materials", "AMAT"]
+  },
+  "LRCX": {
+    "company_name": "Lam Research",
+    "aliases": ["Lam Research", "LRCX"]
+  },
+  "KLAC": {
+    "company_name": "KLA",
+    "aliases": ["KLA", "KLAC"]
+  },
+  "SNPS": {
+    "company_name": "Synopsys",
+    "aliases": ["Synopsys", "SNPS"]
+  },
+  "CDNS": {
+    "company_name": "Cadence",
+    "aliases": ["Cadence", "CDNS"]
+  },
+  "ORCL": {
+    "company_name": "Oracle",
+    "aliases": ["Oracle", "ORCL"]
+  },
+  "SNDK": {
+    "company_name": "Sandisk",
+    "aliases": ["Sandisk", "SNDK"]
+  },
+  "STX": {
+    "company_name": "Seagate",
+    "aliases": ["Seagate", "STX"]
+  },
+  "WDC": {
+    "company_name": "Western Digital",
+    "aliases": ["Western Digital", "WDC"]
+  },
+  "ALAB": {
+    "company_name": "Astera Labs",
+    "aliases": ["Astera Labs", "ALAB"]
+  },
+  "RGT": {
+    "company_name": "Rigetti",
+    "aliases": ["Rigetti", "RGT"]
+  },
+  "ASX": {
+    "company_name": "ASE Technology",
+    "aliases": ["ASE", "ASX"]
+  },
+  "IMOS": {
+    "company_name": "ChipMOS",
+    "aliases": ["ChipMOS", "IMOS"]
+  },
+  "UCTT": {
+    "company_name": "Ultra Clean",
+    "aliases": ["Ultra Clean", "UCTT"]
+  },
+
+  "FLNC": {
+    "company_name": "Fluence Energy",
+    "aliases": ["Fluence", "FLNC"]
+  },
+  "BE": {
+    "company_name": "Bloom Energy",
+    "aliases": ["Bloom Energy", "BE"]
+  },
+  "VST": {
+    "company_name": "Vistra",
+    "aliases": ["Vistra", "VST"]
+  },
+  "CEG": {
+    "company_name": "Constellation Energy",
+    "aliases": ["Constellation Energy", "CEG"]
+  },
+  "OKLO": {
+    "company_name": "Oklo",
+    "aliases": ["Oklo", "OKLO"]
+  },
+  "SMR": {
+    "company_name": "NuScale",
+    "aliases": ["NuScale", "SMR"]
+  },
+  "FSLR": {
+    "company_name": "First Solar",
+    "aliases": ["First Solar", "FSLR"]
+  },
+  "ENPH": {
+    "company_name": "Enphase",
+    "aliases": ["Enphase", "ENPH"]
+  },
+  "GEV": {
+    "company_name": "GE Vernova",
+    "aliases": ["GE Vernova", "GEV"]
+  },
+  "CCJ": {
+    "company_name": "Cameco",
+    "aliases": ["Cameco", "CCJ"]
+  },
+  "VRT": {
+    "company_name": "Vertiv",
+    "aliases": ["Vertiv", "VRT"]
+  },
+  "FIX": {
+    "company_name": "Comfort Systems",
+    "aliases": ["Comfort Systems", "FIX"]
+  },
+  "GNRC": {
+    "company_name": "Generac",
+    "aliases": ["Generac", "GNRC"]
+  },
+  "GLW": {
+    "company_name": "Corning",
+    "aliases": ["Corning", "GLW"]
+  },
+  "CIEN": {
+    "company_name": "Ciena",
+    "aliases": ["Ciena", "CIEN"]
+  },
+  "ANET": {
+    "company_name": "Arista Networks",
+    "aliases": ["Arista", "ANET"]
+  },
+  "DELL": {
+    "company_name": "Dell",
+    "aliases": ["Dell", "DELL"]
+  },
+  "HPE": {
+    "company_name": "HPE",
+    "aliases": ["HPE", "Hewlett Packard Enterprise"]
+  },
+  "LUMN": {
+    "company_name": "Lumen",
+    "aliases": ["Lumen", "LUMN"]
+  },
+  "SMTC": {
+    "company_name": "Semtech",
+    "aliases": ["Semtech", "SMTC"]
+  },
+
+  "MSFT": {
+    "company_name": "Microsoft",
+    "aliases": ["Microsoft", "MSFT"]
+  },
+  "GOOGL": {
+    "company_name": "Alphabet",
+    "aliases": ["Google", "Alphabet", "GOOGL"]
+  },
+  "AMZN": {
+    "company_name": "Amazon",
+    "aliases": ["Amazon", "AMZN"]
+  },
+  "META": {
+    "company_name": "Meta",
+    "aliases": ["Meta", "META", "Facebook"]
+  },
+  "AAPL": {
+    "company_name": "Apple",
+    "aliases": ["Apple", "AAPL"]
+  },
+  "SNOW": {
+    "company_name": "Snowflake",
+    "aliases": ["Snowflake", "SNOW"]
+  },
+  "DDOG": {
+    "company_name": "Datadog",
+    "aliases": ["Datadog", "DDOG"]
+  },
+  "NET": {
+    "company_name": "Cloudflare",
+    "aliases": ["Cloudflare", "NET"]
+  },
+  "CRWD": {
+    "company_name": "CrowdStrike",
+    "aliases": ["CrowdStrike", "CRWD"]
+  },
+  "PANW": {
+    "company_name": "Palo Alto Networks",
+    "aliases": ["Palo Alto", "PANW"]
+  },
+  "ZS": {
+    "company_name": "Zscaler",
+    "aliases": ["Zscaler", "ZS"]
+  },
+  "OKTA": {
+    "company_name": "Okta",
+    "aliases": ["Okta", "OKTA"]
+  },
+  "MDB": {
+    "company_name": "MongoDB",
+    "aliases": ["MongoDB", "MDB"]
+  },
+  "TEAM": {
+    "company_name": "Atlassian",
+    "aliases": ["Atlassian", "TEAM"]
+  },
+  "ADBE": {
+    "company_name": "Adobe",
+    "aliases": ["Adobe", "ADBE"]
+  },
+  "CRM": {
+    "company_name": "Salesforce",
+    "aliases": ["Salesforce", "CRM"]
+  },
+  "SAP": {
+    "company_name": "SAP",
+    "aliases": ["SAP"]
+  },
+  "NOW": {
+    "company_name": "ServiceNow",
+    "aliases": ["ServiceNow", "NOW"]
+  },
+  "TEM": {
+    "company_name": "Tempus AI",
+    "aliases": ["Tempus", "TEM"]
+  },
+  "BX": {
+    "company_name": "Blackstone",
+    "aliases": ["Blackstone", "BX"]
+  }
+}
