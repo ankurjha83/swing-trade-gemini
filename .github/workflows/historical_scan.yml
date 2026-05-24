@@ -13,6 +13,9 @@ on:
         required: true
         default: '15:30'
 
+permissions:
+  contents: write
+
 jobs:
   backtest:
     runs-on: ubuntu-latest
