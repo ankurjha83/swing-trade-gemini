@@ -30,8 +30,6 @@ def ensure_results_file_exists():
         with open(RESULTS_FILE, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
             writer.writeheader()
-            f.write("\n")
-
 
 def save_signals(signals, source, scan_timestamp, sentiment_lookup=None):
     """
