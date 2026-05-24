@@ -35,3 +35,11 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,MSFT,Failed Breakdown Reversal,413.71,434.4,401.3,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,DDOG,Volatility Compression Breakout,146.73,154.07,143.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,NET,Volatility Compression Breakout,224.18,235.39,218.58,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,OKLO,Volatility Compression Breakout,68.38,71.8,66.67,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,TEAM,Volatility Compression Breakout,92.46,97.08,90.15,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,MARA,Volatility Compression Breakout,12.15,12.76,11.85,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,CLSK,Volatility Compression Breakout,13.4,14.07,13.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,RKLB,Volatility Compression Breakout,78.79,82.73,76.82,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,DKNG,Volatility Compression Breakout,24.17,25.38,23.57,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,TTE,Volatility Compression Breakout,93.61,98.29,91.27,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,PYPL,Oversold Bounce,46.48,48.34,45.09,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
