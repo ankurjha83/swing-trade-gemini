@@ -78,7 +78,7 @@ def save_signals(signals, source, scan_timestamp, sentiment_lookup=None):
             "entry": round(price, 2) if price else "",
             "target": round(target, 2) if target else "",
             "stop": round(stop, 2) if stop else "",
-            "risk": signal.get("risk", ""),
+            "risk": signal.get("risk", "UNK"),
             "sentiment": sentiment,
             "outcome": signal.get("outcome", ""),
             "exit_price": signal.get("exit_price", ""),
