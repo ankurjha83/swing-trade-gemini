@@ -51,3 +51,19 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,FLNC,Volatility Compression Breakout,13.59,14.27,13.25,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,ANET,Oversold Bounce,147.05,152.93,142.64,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,LUMN,Early Trend Continuation,9.82,10.31,9.57,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,PLTR,Volatility Compression Breakout,136.03,142.83,132.63,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,SMCI,Volatility Compression Breakout,32.81,34.45,31.98,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,ARM,Volatility Compression Breakout,207.86,218.25,202.66,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,CDNS,Oversold Bounce,358.02,372.34,347.28,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,ORCL,Volatility Compression Breakout,186.79,196.13,182.12,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,IMOS,Volatility Compression Breakout,53.79,56.48,52.45,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,SMR,Oversold Bounce,11.99,12.46,11.63,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,DELL,Volatility Compression Breakout,238.97,250.92,233.0,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,HPE,Volatility Compression Breakout,30.23,31.74,29.47,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,SAP,Oversold Bounce,167.23,173.92,162.21,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,TEM,Volatility Compression Breakout,46.95,49.3,45.78,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,COIN,Volatility Compression Breakout,207.68,218.06,202.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,MARA,Volatility Compression Breakout,12.72,13.36,12.4,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,HUT,Early Trend Continuation,107.3,112.67,104.62,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,ACHR,Volatility Compression Breakout,6.39,6.71,6.23,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,LYFT,Volatility Compression Breakout,13.89,14.58,13.54,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
