@@ -15,7 +15,7 @@ from strategies.strategy_runner import run_all_strategies
 
 import os
 
-SCAN_DATE = os.getenv("SCAN_DATE", "2026-04-01")
+SCAN_DATE = os.getenv("SCAN_DATE", "2026-05-15")
 SCAN_TIME = os.getenv("SCAN_TIME", "15:30")
 
 TARGET_TIMESTAMP = f"{SCAN_DATE} {SCAN_TIME}"
@@ -44,7 +44,7 @@ def run_historical_scan(ticker):
 
         df = yf.download(
             ticker,
-            period="120d",
+            period="59d",
             interval="15m",
             auto_adjust=True,
             progress=False
