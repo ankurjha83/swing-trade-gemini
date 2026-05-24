@@ -2,7 +2,8 @@ import asyncio
 from data_fetcher import get_enriched_data
 from strategies.strategy_runner import run_all_strategies
 from notifier import send_scan_report
-
+from datetime import datetime, timezone
+from save_results import save_signals
 
 def load_tickers():
     with open("tickers.txt", "r") as f:
@@ -28,7 +29,7 @@ async def main():
             for signal in signals:
                 signal["target_1"] = signal.get("target_1", signal["price"] * 1.05)
                 signal["stop_loss"] = signal.get("stop_loss", signal["price"] * 0.975)
-                signal["risk"] = signal.get("risk", "Medium")
+                signal["risk"] = signal.get("risk", "UNK")
             
                 matches.append(signal)
             
@@ -36,6 +37,13 @@ async def main():
         else:
             print(f"➖ {symbol}: Scanned")
 
+    scan_timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+
+    save_signals(
+        signals=matches,
+        source="LIVE",
+        scan_timestamp=scan_timestamp
+    )
     await send_scan_report(matches, len(tickers))
 
 
