@@ -7,13 +7,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from data_fetcher import add_indicators
 from strategies.strategy_runner import run_all_strategies
+from save_results import save_signals
 
 
 # ============================================
 # CONFIG
 # ============================================
-
-import os
 
 SCAN_DATE = os.getenv("SCAN_DATE", "2026-05-15")
 SCAN_TIME = os.getenv("SCAN_TIME", "15:30")
@@ -55,6 +54,9 @@ def run_historical_scan(ticker):
 
         df = add_indicators(df)
 
+        if df is None or df.empty:
+            return []
+
         df.index = pd.to_datetime(df.index)
 
         historical_df = df[
@@ -82,7 +84,7 @@ def run_historical_scan(ticker):
 
 all_signals = []
 
-print(f"\n========== HISTORICAL SCAN ==========")
+print("\n========== HISTORICAL SCAN ==========")
 print(f"Timestamp: {TARGET_TIMESTAMP}\n")
 
 
@@ -103,6 +105,12 @@ for ticker in TICKERS:
             )
 
 
-print("\n========== SUMMARY ==========")
+save_signals(
+    signals=all_signals,
+    source="HISTORICAL",
+    scan_timestamp=TARGET_TIMESTAMP
+)
 
+
+print("\n========== SUMMARY ==========")
 print(f"Total Signals Found: {len(all_signals)}")
