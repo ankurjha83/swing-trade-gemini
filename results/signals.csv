@@ -28,3 +28,10 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 14:33:33,HISTORICAL,2026-05-03 09:00,VLO,Volatility Compression Breakout,246.86,259.2,240.69,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 14:58:44,HISTORICAL,2026-05-04 09:00,BE,Volatility Compression Breakout,290.76,305.3,283.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 14:58:44,HISTORICAL,2026-05-04 09:00,VLO,Volatility Compression Breakout,246.86,259.2,240.69,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,KLAC,Oversold Bounce,1713.32,1781.85,1661.92,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,KLAC,Volatility Compression Breakout,1713.32,1798.99,1670.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,VST,Volatility Compression Breakout,160.89,168.93,156.87,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,GNRC,Volatility Compression Breakout,256.92,269.77,250.5,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,MSFT,Failed Breakdown Reversal,413.71,434.4,401.3,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,DDOG,Volatility Compression Breakout,146.73,154.07,143.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:00:43,HISTORICAL,2026-05-05 09:00,NET,Volatility Compression Breakout,224.18,235.39,218.58,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
