@@ -11,12 +11,30 @@ CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 MAX_TELEGRAM_LENGTH = 3500
 
 
+def get_risk_icon(risk):
+    risk = str(risk).lower().strip()
+
+    if risk in ["low", "low-medium"]:
+        return "🟢"
+
+    if risk == "medium":
+        return "🟡"
+
+    if risk in ["medium-high", "medium high"]:
+        return "🟠"
+
+    if risk == "high":
+        return "🔴"
+
+    return "⚪"
+
+
 def format_signal(signal):
     ticker = signal["ticker"]
     news = get_stock_news_sentiment(ticker, max_items=2)
 
     message = (
-        f"✅ *{ticker}*\n"
+        f"{get_risk_icon(signal.get('risk', 'Medium'))} *{ticker}*\n"
         f"Entry: `${signal['price']:.2f}`\n"
         f"Target +5%: `${signal['target_1']:.2f}`\n"
         f"Stop: `${signal['stop_loss']:.2f}`\n"
@@ -70,7 +88,10 @@ def build_messages(matches, total_scanned):
 
             if len(current_message) + len(block) > MAX_TELEGRAM_LENGTH:
                 messages.append(current_message)
-                current_message = f"📌 *{strategy}* continued\n" + format_signal(signal)
+                current_message = (
+                    f"📌 *{strategy}* continued\n"
+                    + format_signal(signal)
+                )
             else:
                 current_message += block
 
