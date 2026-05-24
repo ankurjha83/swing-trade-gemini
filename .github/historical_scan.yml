@@ -1,0 +1,41 @@
+name: Historical Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      scan_date:
+        description: 'Date to scan (YYYY-MM-DD)'
+        required: true
+        default: '2026-04-01'
+
+      scan_time:
+        description: 'Time to scan (HH:MM)'
+        required: true
+        default: '15:30'
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Historical Scan
+        env:
+          SCAN_DATE: ${{ github.event.inputs.scan_date }}
+          SCAN_TIME: ${{ github.event.inputs.scan_time }}
+          PYTHONPATH: ${{ github.workspace }}
+
+        run: python backtests/historical_scan.py
