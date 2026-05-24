@@ -11,11 +11,10 @@ CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def format_signal(signal):
     ticker = signal["ticker"]
-    news = get_stock_news_sentiment(ticker)
+    news = get_stock_news_sentiment(ticker, max_items=3)
 
     message = (
         f"✅ *{ticker}*\n"
-        f"Strategy: {signal['strategy']}\n"
         f"Entry: `${signal['price']:.2f}`\n"
         f"Target +5%: `${signal['target_1']:.2f}`\n"
         f"Stop: `${signal['stop_loss']:.2f}`\n"
@@ -25,7 +24,7 @@ def format_signal(signal):
     )
 
     if news["headlines"]:
-        message += "\nNews:"
+        message += "\nLatest News:"
         for headline in news["headlines"]:
             message += f"\n- {headline}"
 
@@ -45,16 +44,20 @@ async def send_scan_report(matches, total_scanned):
         for signal in matches:
             grouped[signal["strategy"]].append(signal)
 
-        ordered_signals = []
-        for strategy, strategy_signals in grouped.items():
-            ordered_signals.extend(strategy_signals)
+        message_parts = [
+            f"🔥 *SWING ALERT* ({len(matches)} found)",
+            "━━━━━━━━━━━━━━━━━━"
+        ]
 
-        message = (
-            f"🔥 *SWING ALERT* ({len(matches)} found)\n"
-            f"━━━━━━━━━━━━━━━━━━\n"
-            + "\n\n".join(format_signal(signal) for signal in ordered_signals)
-            + f"\n\n📊 Total Scanned: `{total_scanned}`"
-        )
+        for strategy, signals in grouped.items():
+            message_parts.append(f"📌 *{strategy}* ({len(signals)})")
+
+            for signal in signals:
+                message_parts.append(format_signal(signal))
+
+        message_parts.append(f"📊 Total Scanned: `{total_scanned}`")
+
+        message = "\n\n".join(message_parts)
 
     else:
         message = (
