@@ -24,3 +24,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,PSX,Volatility Compression Breakout,179.13,188.09,174.66,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 14:21:36,HISTORICAL,2026-05-02 09:00,BE,Volatility Compression Breakout,290.76,305.3,283.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 14:21:36,HISTORICAL,2026-05-02 09:00,VLO,Volatility Compression Breakout,246.86,259.2,240.69,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:33:33,HISTORICAL,2026-05-03 09:00,BE,Volatility Compression Breakout,290.76,305.3,283.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:33:33,HISTORICAL,2026-05-03 09:00,VLO,Volatility Compression Breakout,246.86,259.2,240.69,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
