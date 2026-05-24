@@ -6,6 +6,9 @@ on:
     - cron: '*/30 10-21 * * 1-5'
   workflow_dispatch: 
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,3 +33,15 @@ jobs:
           # THIS IS THE CRITICAL FIX:
           PYTHONPATH: ${{ github.workspace }} 
         run: python main.py
+
+      - name: Commit Updated Results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add results/signals.csv
+
+          git diff --cached --quiet || git commit -m "Update live scan results"
+
+          git pull --rebase
+          git push
