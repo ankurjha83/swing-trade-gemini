@@ -26,19 +26,12 @@ async def main():
 
         if signals:
             for signal in signals:
-                target_1 = signal.get("target_1", signal["price"] * 1.05)
-                stop_loss = signal.get("stop_loss", signal["price"] * 0.975)
-                risk = signal.get("risk", "Medium")
+                signal["target_1"] = signal.get("target_1", signal["price"] * 1.05)
+                signal["stop_loss"] = signal.get("stop_loss", signal["price"] * 0.975)
+                signal["risk"] = signal.get("risk", "Medium")
             
-                matches.append(
-                    f"✅ *{signal['ticker']}*\n"
-                    f"Strategy: *{signal['strategy']}*\n"
-                    f"Entry: `${signal['price']:.2f}`\n"
-                    f"Target +5%: `${target_1:.2f}`\n"
-                    f"Stop: `${stop_loss:.2f}`\n"
-                    f"Risk: `{risk}`\n"
-                    f"Reason: {signal['reason']}"
-                )    
+                matches.append(signal)
+            
                 print(f"MATCH FOUND: {symbol} - {signal['strategy']}")
         else:
             print(f"➖ {symbol}: Scanned")
