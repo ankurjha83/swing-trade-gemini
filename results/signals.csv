@@ -43,3 +43,11 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,DKNG,Volatility Compression Breakout,24.17,25.38,23.57,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,TTE,Volatility Compression Breakout,93.61,98.29,91.27,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 15:05:10,HISTORICAL,2026-05-06 09:00,PYPL,Oversold Bounce,46.48,48.34,45.09,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,AVGO,Volatility Compression Breakout,425.28,446.54,414.65,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,MRVL,Volatility Compression Breakout,172.15,180.76,167.85,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,TSM,Volatility Compression Breakout,419.44,440.41,408.95,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,AMAT,Volatility Compression Breakout,428.6,450.03,417.89,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,ALAB,Volatility Compression Breakout,213.87,224.56,208.52,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,FLNC,Volatility Compression Breakout,13.59,14.27,13.25,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,ANET,Oversold Bounce,147.05,152.93,142.64,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 15:08:20,HISTORICAL,2026-05-07 09:00,LUMN,Early Trend Continuation,9.82,10.31,9.57,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
