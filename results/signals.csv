@@ -12,3 +12,13 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 07:31:03,LIVE,2026-05-24 07:31:03,DKNG,Oversold Bounce,25.14,26.14,24.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-24 07:31:03,LIVE,2026-05-24 07:31:03,CVE,Failed Breakdown Reversal,30.05,31.55,29.15,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-05-24 07:31:03,LIVE,2026-05-24 07:31:03,SE,Volatility Compression Breakout,87.24,91.6,85.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,AMD,Volatility Compression Breakout,354.35,372.07,345.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,AVGO,Volatility Compression Breakout,417.44,438.31,407.0,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,MU,Volatility Compression Breakout,517.19,543.05,504.26,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,CDNS,Volatility Compression Breakout,329.61,346.09,321.37,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,STX,Volatility Compression Breakout,673.59,707.27,656.75,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,BE,High Tight Flag,283.21,297.37,276.13,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,GNRC,Volatility Compression Breakout,259.24,272.2,252.76,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,JOBY,Volatility Compression Breakout,9.19,9.65,8.97,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,MPC,Volatility Compression Breakout,248.2,260.61,241.99,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 14:06:25,HISTORICAL,2026-05-01 09:00,PSX,Volatility Compression Breakout,179.13,188.09,174.66,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
