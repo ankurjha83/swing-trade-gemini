@@ -1,1 +1,5 @@
 run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,sentiment,outcome,exit_price,pnl_pct,notes
+2026-05-24 07:12:42,HISTORICAL,2026-05-15 15:30,SNDK,Volatility Compression Breakout,1415.0,1485.75,1379.62,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 07:12:42,HISTORICAL,2026-05-15 15:30,FLNC,Volatility Compression Breakout,21.04,22.09,20.51,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-24 07:12:42,HISTORICAL,2026-05-15 15:30,MSTR,Oversold Bounce,178.81,185.96,173.45,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-24 07:12:42,HISTORICAL,2026-05-15 15:30,ASTS,Early Trend Continuation,84.44,88.66,82.33,,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
