@@ -256,5 +256,157 @@
   "BX": {
     "company_name": "Blackstone",
     "aliases": ["Blackstone", "BX"]
+  },
+  "TSLA": {
+    "company_name": "Tesla",
+    "aliases": ["Tesla", "TSLA"]
+  },
+  "MSTR": {
+    "company_name": "MicroStrategy",
+    "aliases": ["MicroStrategy", "MSTR"]
+  },
+  "COIN": {
+    "company_name": "Coinbase",
+    "aliases": ["Coinbase", "COIN"]
+  },
+  "MARA": {
+    "company_name": "MARA Holdings",
+    "aliases": ["MARA", "Marathon Digital"]
+  },
+  "RIOT": {
+    "company_name": "Riot Platforms",
+    "aliases": ["Riot", "RIOT"]
+  },
+  "CLSK": {
+    "company_name": "CleanSpark",
+    "aliases": ["CleanSpark", "CLSK"]
+  },
+  "HUT": {
+    "company_name": "Hut 8",
+    "aliases": ["Hut 8", "HUT"]
+  },
+  "IONQ": {
+    "company_name": "IonQ",
+    "aliases": ["IonQ", "IONQ"]
+  },
+  "QBTS": {
+    "company_name": "D-Wave Quantum",
+    "aliases": ["D-Wave", "D Wave", "QBTS"]
+  },
+  "RGTI": {
+    "company_name": "Rigetti",
+    "aliases": ["Rigetti", "RGTI"]
+  },
+  "QUBT": {
+    "company_name": "Quantum Computing Inc",
+    "aliases": ["Quantum Computing", "QUBT"]
+  },
+  "ACHR": {
+    "company_name": "Archer Aviation",
+    "aliases": ["Archer", "ACHR"]
+  },
+  "JOBY": {
+    "company_name": "Joby Aviation",
+    "aliases": ["Joby", "JOBY"]
+  },
+  "ASTS": {
+    "company_name": "AST SpaceMobile",
+    "aliases": ["AST SpaceMobile", "ASTS"]
+  },
+  "RKLB": {
+    "company_name": "Rocket Lab",
+    "aliases": ["Rocket Lab", "RKLB"]
+  },
+  "HOOD": {
+    "company_name": "Robinhood",
+    "aliases": ["Robinhood", "HOOD"]
+  },
+  "SOFI": {
+    "company_name": "SoFi",
+    "aliases": ["SoFi", "SOFI"]
+  },
+  "AFRM": {
+    "company_name": "Affirm",
+    "aliases": ["Affirm", "AFRM"]
+  },
+  "DKNG": {
+    "company_name": "DraftKings",
+    "aliases": ["DraftKings", "DKNG"]
+  },
+  "MPC": {
+    "company_name": "Marathon Petroleum",
+    "aliases": ["Marathon Petroleum", "MPC"]
+  },
+  "VLO": {
+    "company_name": "Valero",
+    "aliases": ["Valero", "VLO"]
+  },
+  "TTE": {
+    "company_name": "TotalEnergies",
+    "aliases": ["TotalEnergies", "TTE"]
+  },
+  "PSX": {
+    "company_name": "Phillips 66",
+    "aliases": ["Phillips 66", "PSX"]
+  },
+  "CVE": {
+    "company_name": "Cenovus",
+    "aliases": ["Cenovus", "CVE"]
+  },
+  "UBER": {
+    "company_name": "Uber",
+    "aliases": ["Uber", "UBER"]
+  },
+  "LYFT": {
+    "company_name": "Lyft",
+    "aliases": ["Lyft", "LYFT"]
+  },
+  "DASH": {
+    "company_name": "DoorDash",
+    "aliases": ["DoorDash", "DASH"]
+  },
+  "ABNB": {
+    "company_name": "Airbnb",
+    "aliases": ["Airbnb", "ABNB"]
+  },
+  "SHOP": {
+    "company_name": "Shopify",
+    "aliases": ["Shopify", "SHOP"]
+  },
+  "MELI": {
+    "company_name": "MercadoLibre",
+    "aliases": ["MercadoLibre", "MELI"]
+  },
+  "SE": {
+    "company_name": "Sea Limited",
+    "aliases": ["Sea Limited", "Shopee", "SE"]
+  },
+  "PDD": {
+    "company_name": "PDD Holdings",
+    "aliases": ["PDD", "Temu"]
+  },
+  "BABA": {
+    "company_name": "Alibaba",
+    "aliases": ["Alibaba", "BABA"]
+  },
+  "JD": {
+    "company_name": "JD.com",
+    "aliases": ["JD.com", "JD"]
+  },
+  "PYPL": {
+    "company_name": "PayPal",
+    "aliases": ["PayPal", "PYPL"]
+  },
+  "NFLX": {
+    "company_name": "Netflix",
+    "aliases": ["Netflix", "NFLX"]
+  },
+  "SPOT": {
+    "company_name": "Spotify",
+    "aliases": ["Spotify", "SPOT"]
+  },
+  "APP": {
+    "company_name": "AppLovin",
+    "aliases": ["AppLovin", "APP"]
   }
 }
