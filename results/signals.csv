@@ -67,3 +67,12 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,HUT,Early Trend Continuation,107.3,112.67,104.62,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
 2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,ACHR,Volatility Compression Breakout,6.39,6.71,6.23,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-24 15:09:51,HISTORICAL,2026-05-13 09:00,LYFT,Volatility Compression Breakout,13.89,14.58,13.54,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,NET,Volatility Compression Breakout,216.32,227.14,210.91,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,OKTA,Volatility Compression Breakout,92.28,96.89,89.97,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,MDB,Volatility Compression Breakout,326.32,342.64,318.16,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,IONQ,Early Trend Continuation,63.6,66.78,62.01,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,QBTS,Early Trend Continuation,29.38,30.85,28.65,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,AFRM,Oversold Bounce,65.24,67.85,63.28,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,DKNG,Oversold Bounce,25.14,26.14,24.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,CVE,Failed Breakdown Reversal,30.05,31.55,29.15,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-05-25 13:34:07,LIVE,2026-05-25 13:34:07,SE,Volatility Compression Breakout,87.24,91.6,85.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
