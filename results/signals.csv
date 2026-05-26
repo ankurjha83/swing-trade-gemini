@@ -113,3 +113,10 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-25 21:46:36,LIVE,2026-05-25 21:46:36,CVE,Failed Breakdown Reversal,30.05,31.55,29.15,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-05-25 21:46:36,LIVE,2026-05-25 21:46:36,SE,Volatility Compression Breakout,87.24,91.6,85.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-26 19:24:30,LIVE,2026-05-26 19:24:30,QBTS,Temporarily Devalued Quality,27.32,28.69,26.64,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,ARM,Volatility Compression Breakout,321.37,337.44,313.34,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,SMR,Dip Buy in Strong Uptrend,12.23,12.84,11.92,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,MSFT,Volatility Compression Breakout,416.15,436.96,405.75,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,BX,Failed Breakdown Reversal,118.12,124.03,114.58,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,MARA,Dip Buy in Strong Uptrend,14.28,14.99,13.92,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,HUT,Dip Buy in Strong Uptrend,112.53,118.16,109.72,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-05-26 21:13:11,LIVE,2026-05-26 21:13:11,SHOP,Volatility Compression Breakout,104.91,110.16,102.29,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
