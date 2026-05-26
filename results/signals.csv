@@ -112,3 +112,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-25 21:46:36,LIVE,2026-05-25 21:46:36,DKNG,Oversold Bounce,25.14,26.14,24.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-25 21:46:36,LIVE,2026-05-25 21:46:36,CVE,Failed Breakdown Reversal,30.05,31.55,29.15,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-05-25 21:46:36,LIVE,2026-05-25 21:46:36,SE,Volatility Compression Breakout,87.24,91.6,85.06,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-26 19:24:30,LIVE,2026-05-26 19:24:30,QBTS,Temporarily Devalued Quality,27.32,28.69,26.64,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
