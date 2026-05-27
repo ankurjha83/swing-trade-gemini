@@ -134,3 +134,6 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-27 11:19:36,LIVE,2026-05-27 11:19:36,MARA,Dip Buy in Strong Uptrend,14.28,14.99,13.92,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-05-27 11:19:36,LIVE,2026-05-27 11:19:36,HUT,Dip Buy in Strong Uptrend,112.53,118.16,109.72,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-05-27 11:19:36,LIVE,2026-05-27 11:19:36,SHOP,Volatility Compression Breakout,104.91,110.16,102.29,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-27 19:29:33,LIVE,2026-05-27 19:29:33,ASTS,Early Trend Continuation,129.63,136.12,126.39,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-27 19:29:33,LIVE,2026-05-27 19:29:33,ASTS,High Tight Flag,129.63,136.12,126.39,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-27 19:29:33,LIVE,2026-05-27 19:29:33,VLO,Oversold Bounce,242.49,252.19,235.22,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
