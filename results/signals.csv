@@ -139,3 +139,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-27 19:29:33,LIVE,2026-05-27 19:29:33,VLO,Oversold Bounce,242.49,252.19,235.22,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-27 21:24:23,LIVE,2026-05-27 21:24:23,MU,High Tight Flag,928.41,974.83,905.2,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
 2026-05-27 21:24:23,LIVE,2026-05-27 21:24:23,PDD,Oversold Bounce,86.6,90.06,84.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-27 22:58:19,LIVE,2026-05-27 22:58:19,MU,High Tight Flag,928.41,974.83,905.2,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-27 22:58:19,LIVE,2026-05-27 22:58:19,PDD,Oversold Bounce,86.6,90.06,84.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
