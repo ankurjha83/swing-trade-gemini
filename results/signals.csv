@@ -141,3 +141,10 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-27 21:24:23,LIVE,2026-05-27 21:24:23,PDD,Oversold Bounce,86.6,90.06,84.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-27 22:58:19,LIVE,2026-05-27 22:58:19,MU,High Tight Flag,928.41,974.83,905.2,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
 2026-05-27 22:58:19,LIVE,2026-05-27 22:58:19,PDD,Oversold Bounce,86.6,90.06,84.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,CRM,Failed Breakdown Reversal,179.21,188.18,173.84,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,IONQ,Early Trend Continuation,66.39,69.71,64.73,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,QBTS,Early Trend Continuation,28.08,29.48,27.38,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,QBTS,Volatility Compression Breakout,28.08,29.48,27.38,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,RGTI,Early Trend Continuation,24.81,26.05,24.19,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,QUBT,Early Trend Continuation,11.68,12.26,11.38,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,HOOD,Failed Breakdown Reversal,76.38,80.2,74.09,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
