@@ -148,3 +148,8 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,RGTI,Early Trend Continuation,24.81,26.05,24.19,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
 2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,QUBT,Early Trend Continuation,11.68,12.26,11.38,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
 2026-05-28 13:57:28,LIVE,2026-05-28 13:57:28,HOOD,Failed Breakdown Reversal,76.38,80.2,74.09,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-05-28 20:32:09,LIVE,2026-05-28 20:32:09,META,Volatility Compression Breakout,635.22,666.98,619.34,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-28 20:32:09,LIVE,2026-05-28 20:32:09,NET,Volatility Compression Breakout,228.2,239.61,222.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-28 20:32:09,LIVE,2026-05-28 20:32:09,IONQ,High Tight Flag,70.14,73.65,68.39,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-28 20:32:09,LIVE,2026-05-28 20:32:09,RGTI,Early Trend Continuation,27.02,28.37,26.34,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-05-28 20:32:09,LIVE,2026-05-28 20:32:09,PDD,Volatility Compression Breakout,83.02,87.17,80.94,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
