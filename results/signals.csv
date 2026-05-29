@@ -165,3 +165,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-29 12:50:16,LIVE,2026-05-29 12:50:16,PDD,Volatility Compression Breakout,83.02,87.17,80.94,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-05-29 16:48:18,LIVE,2026-05-29 16:48:18,ALAB,Dip Buy in Strong Uptrend,341.69,358.77,333.15,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-05-29 16:48:18,LIVE,2026-05-29 16:48:18,JOBY,Dip Buy in Strong Uptrend,11.99,12.59,11.7,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-05-29 19:35:16,LIVE,2026-05-29 19:35:16,DELL,High Tight Flag,417.79,438.67,407.34,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
