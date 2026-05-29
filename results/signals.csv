@@ -166,3 +166,19 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-29 16:48:18,LIVE,2026-05-29 16:48:18,ALAB,Dip Buy in Strong Uptrend,341.69,358.77,333.15,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-05-29 16:48:18,LIVE,2026-05-29 16:48:18,JOBY,Dip Buy in Strong Uptrend,11.99,12.59,11.7,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-05-29 19:35:16,LIVE,2026-05-29 19:35:16,DELL,High Tight Flag,417.79,438.67,407.34,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,AVGO,Volatility Compression Breakout,447.21,469.57,436.03,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,SNDK,Volatility Compression Breakout,1694.0,1778.7,1651.65,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,BE,Volatility Compression Breakout,285.46,299.73,278.32,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,GEV,Oversold Bounce,968.55,1007.29,939.49,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,VRT,Volatility Compression Breakout,316.0,331.8,308.1,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,FIX,Volatility Compression Breakout,1828.59,1920.02,1782.88,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,GLW,Volatility Compression Breakout,181.22,190.28,176.69,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,SNOW,High Tight Flag,255.37,268.14,248.99,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,NOW,High Tight Flag,124.44,130.66,121.33,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,NOW,Volatility Compression Breakout,124.44,130.66,121.33,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,QBTS,Volatility Compression Breakout,30.13,31.64,29.38,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,ASTS,Oversold Bounce,113.34,117.87,109.94,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,RKLB,Volatility Compression Breakout,143.49,150.67,139.91,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,HOOD,High Tight Flag,94.35,99.07,91.99,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,CVE,Oversold Bounce,27.57,28.67,26.74,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,MELI,Failed Breakdown Reversal,1695.65,1780.43,1644.78,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
