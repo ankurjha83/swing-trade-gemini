@@ -182,3 +182,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,HOOD,High Tight Flag,94.35,99.07,91.99,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
 2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,CVE,Oversold Bounce,27.57,28.67,26.74,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-05-29 21:56:52,LIVE,2026-05-29 21:56:52,MELI,Failed Breakdown Reversal,1695.65,1780.43,1644.78,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-02 14:12:15,LIVE,2026-06-02 14:12:15,ARM,Early Trend Continuation,404.15,424.36,394.05,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
