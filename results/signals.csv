@@ -203,3 +203,13 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-03 18:51:07,LIVE,2026-06-03 18:51:07,ENPH,Dip Buy in Strong Uptrend,69.08,72.53,67.35,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-06-03 18:51:07,LIVE,2026-06-03 18:51:07,ZS,Temporarily Devalued Quality,135.14,141.9,131.76,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
 2026-06-03 18:51:07,LIVE,2026-06-03 18:51:07,OKTA,Temporarily Devalued Quality,124.98,131.23,121.86,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,SMCI,Oversold Bounce,47.42,49.32,46.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,SMCI,Volatility Compression Breakout,47.42,49.79,46.23,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,CDNS,Volatility Compression Breakout,408.06,428.46,397.86,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,GOOGL,Failed Breakdown Reversal,359.4,377.37,348.62,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,AMZN,Oversold Bounce,249.97,259.97,242.47,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,DDOG,Oversold Bounce,250.32,260.33,242.81,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,MDB,Failed Breakdown Reversal,368.1,386.51,357.06,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,BX,Oversold Bounce,110.3,114.71,106.99,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,IONQ,Failed Breakdown Reversal,68.21,71.62,66.16,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-03 21:55:19,LIVE,2026-06-03 21:55:19,DASH,Volatility Compression Breakout,154.6,162.33,150.74,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
