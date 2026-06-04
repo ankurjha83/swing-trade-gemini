@@ -226,3 +226,7 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-04 16:23:56,LIVE,2026-06-04 16:23:56,ALAB,Dip Buy in Strong Uptrend,358.08,375.99,349.13,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-06-04 16:23:56,LIVE,2026-06-04 16:23:56,OKLO,Temporarily Devalued Quality,64.66,67.89,63.04,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
 2026-06-04 16:23:56,LIVE,2026-06-04 16:23:56,SMR,Temporarily Devalued Quality,12.06,12.66,11.75,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-04 21:01:35,LIVE,2026-06-04 21:01:35,FLNC,Early Trend Continuation,27.15,28.51,26.47,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-04 21:01:35,LIVE,2026-06-04 21:01:35,META,Failed Breakdown Reversal,627.54,658.92,608.71,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-04 21:01:35,LIVE,2026-06-04 21:01:35,TTE,Volatility Compression Breakout,90.09,94.59,87.84,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-04 21:01:35,LIVE,2026-06-04 21:01:35,MELI,Failed Breakdown Reversal,1634.51,1716.23,1585.47,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
