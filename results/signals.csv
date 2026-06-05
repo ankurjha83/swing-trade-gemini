@@ -252,3 +252,17 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-05 20:28:23,LIVE,2026-06-05 20:28:23,DKNG,Oversold Bounce,24.94,25.94,24.19,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-05 20:28:23,LIVE,2026-06-05 20:28:23,TTE,Failed Breakdown Reversal,88.72,93.16,86.06,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-05 20:28:23,LIVE,2026-06-05 20:28:23,APP,Failed Breakdown Reversal,557.11,584.97,540.4,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,BE,Oversold Bounce,263.61,274.15,255.7,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,VST,Failed Breakdown Reversal,148.74,156.18,144.28,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,GOOGL,Failed Breakdown Reversal,368.72,387.15,357.66,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,SNOW,Oversold Bounce,238.22,247.75,231.07,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,PANW,Failed Breakdown Reversal,272.13,285.74,263.97,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,SAP,Failed Breakdown Reversal,184.75,193.99,179.21,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,MARA,Temporarily Devalued Quality,12.31,12.93,12.01,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,MARA,Oversold Bounce,12.31,12.81,11.95,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,HOOD,Oversold Bounce,82.47,85.77,80.0,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,SOFI,Oversold Bounce,16.04,16.68,15.56,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,DKNG,Failed Breakdown Reversal,24.94,26.19,24.19,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,DKNG,Oversold Bounce,24.94,25.94,24.19,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,TTE,Failed Breakdown Reversal,88.72,93.16,86.06,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,APP,Failed Breakdown Reversal,557.11,584.97,540.4,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
