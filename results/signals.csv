@@ -266,3 +266,11 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,DKNG,Oversold Bounce,24.94,25.94,24.19,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,TTE,Failed Breakdown Reversal,88.72,93.16,86.06,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-05 22:03:20,LIVE,2026-06-05 22:03:20,APP,Failed Breakdown Reversal,557.11,584.97,540.4,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,BE,Failed Breakdown Reversal,253.56,266.24,245.95,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,SMR,Failed Breakdown Reversal,10.76,11.29,10.43,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,ENPH,Failed Breakdown Reversal,56.85,59.69,55.14,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,CRWD,Failed Breakdown Reversal,658.65,691.58,638.89,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,TEM,Volatility Compression Breakout,48.6,51.03,47.38,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,JOBY,Failed Breakdown Reversal,9.69,10.18,9.4,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,MPC,Volatility Compression Breakout,266.14,279.45,259.49,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-08 20:26:37,LIVE,2026-06-08 20:26:37,PSX,Volatility Compression Breakout,183.43,192.6,178.84,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
