@@ -296,3 +296,23 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-09 18:32:34,LIVE,2026-06-09 18:32:34,CIEN,Temporarily Devalued Quality,432.7,454.34,421.88,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
 2026-06-09 18:32:34,LIVE,2026-06-09 18:32:34,QUBT,Temporarily Devalued Quality,9.56,10.04,9.33,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
 2026-06-09 18:32:34,LIVE,2026-06-09 18:32:34,ASTS,Temporarily Devalued Quality,89.44,93.91,87.2,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,SMCI,Oversold Bounce,40.63,42.26,39.41,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,MRVL,Temporarily Devalued Quality,266.88,280.22,260.21,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,MRVL,Oversold Bounce,266.88,277.56,258.87,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,CDNS,Oversold Bounce,391.0,406.64,379.27,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,ORCL,Oversold Bounce,205.75,213.98,199.58,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,IMOS,Dip Buy in Strong Uptrend,58.58,61.51,57.12,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,UCTT,Dip Buy in Strong Uptrend,91.88,96.47,89.58,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,UCTT,Early Trend Continuation,91.88,96.47,89.58,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,BE,Dip Buy in Strong Uptrend,259.44,272.41,252.95,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,FSLR,Oversold Bounce,262.27,272.76,254.4,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,CCJ,Oversold Bounce,102.26,106.35,99.19,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,VRT,Oversold Bounce,289.47,301.05,280.79,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,GNRC,Oversold Bounce,260.96,271.4,253.13,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,GLW,Oversold Bounce,173.88,180.84,168.66,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,CIEN,Oversold Bounce,439.14,456.71,425.97,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,DELL,Oversold Bounce,381.55,396.82,370.11,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,TSLA,Oversold Bounce,396.57,412.43,384.67,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,COIN,Oversold Bounce,155.52,161.74,150.85,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,CVE,Oversold Bounce,27.65,28.76,26.82,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-09 21:04:13,LIVE,2026-06-09 21:04:13,DASH,Dip Buy in Strong Uptrend,155.64,163.42,151.75,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
