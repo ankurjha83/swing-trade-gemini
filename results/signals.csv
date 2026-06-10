@@ -350,3 +350,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,CIEN,Volatility Compression Breakout,436.14,457.95,425.24,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,SMTC,Dip Buy in Strong Uptrend,154.84,162.58,150.97,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
 2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,SE,Oversold Bounce,82.33,85.62,79.86,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-10 22:09:42,LIVE,2026-06-10 22:09:42,ORCL,Failed Breakdown Reversal,203.47,213.64,197.37,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-10 22:09:42,LIVE,2026-06-10 22:09:42,SE,Oversold Bounce,82.46,85.76,79.99,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
