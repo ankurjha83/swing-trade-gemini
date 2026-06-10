@@ -344,3 +344,9 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,QUBT,Oversold Bounce,9.67,10.05,9.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,NFLX,Failed Breakdown Reversal,81.82,85.91,79.37,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-10 17:25:43,LIVE,2026-06-10 17:25:43,MRVL,Temporarily Devalued Quality,256.91,269.76,250.49,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,KLAC,Dip Buy in Strong Uptrend,2146.52,2253.85,2092.86,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,SNPS,Volatility Compression Breakout,462.34,485.46,450.78,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,BE,Temporarily Devalued Quality,235.59,247.36,229.7,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,CIEN,Volatility Compression Breakout,436.14,457.95,425.24,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,SMTC,Dip Buy in Strong Uptrend,154.84,162.58,150.97,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-10 19:55:35,LIVE,2026-06-10 19:55:35,SE,Oversold Bounce,82.33,85.62,79.86,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
