@@ -336,3 +336,10 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-09 23:01:27,LIVE,2026-06-09 23:01:27,COIN,Oversold Bounce,155.52,161.74,150.85,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-09 23:01:27,LIVE,2026-06-09 23:01:27,CVE,Oversold Bounce,27.65,28.76,26.82,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-09 23:01:27,LIVE,2026-06-09 23:01:27,DASH,Dip Buy in Strong Uptrend,155.64,163.42,151.75,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,AMAT,Early Trend Continuation,509.98,535.48,497.24,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,UCTT,Early Trend Continuation,92.89,97.53,90.57,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,MSTR,Oversold Bounce,119.22,123.99,115.64,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,QBTS,Oversold Bounce,24.08,25.04,23.36,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,RGTI,Oversold Bounce,20.24,21.05,19.63,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,QUBT,Oversold Bounce,9.67,10.05,9.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,NFLX,Failed Breakdown Reversal,81.82,85.91,79.37,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
