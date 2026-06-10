@@ -343,3 +343,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,RGTI,Oversold Bounce,20.24,21.05,19.63,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,QUBT,Oversold Bounce,9.67,10.05,9.38,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-10 13:37:32,LIVE,2026-06-10 13:37:32,NFLX,Failed Breakdown Reversal,81.82,85.91,79.37,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-10 17:25:43,LIVE,2026-06-10 17:25:43,MRVL,Temporarily Devalued Quality,256.91,269.76,250.49,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
