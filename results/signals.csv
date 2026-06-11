@@ -358,3 +358,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-11 17:52:25,LIVE,2026-06-11 17:52:25,UCTT,Early Trend Continuation,99.54,104.52,97.05,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
 2026-06-11 20:29:32,LIVE,2026-06-11 20:29:32,SMCI,Volatility Compression Breakout,31.96,33.56,31.16,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-11 20:29:32,LIVE,2026-06-11 20:29:32,VST,Volatility Compression Breakout,146.37,153.69,142.71,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-11 22:25:13,LIVE,2026-06-11 22:25:13,SMCI,Volatility Compression Breakout,31.96,33.56,31.16,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-11 22:25:13,LIVE,2026-06-11 22:25:13,VST,Volatility Compression Breakout,146.37,153.69,142.71,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
