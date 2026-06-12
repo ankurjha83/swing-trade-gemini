@@ -360,3 +360,6 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-11 20:29:32,LIVE,2026-06-11 20:29:32,VST,Volatility Compression Breakout,146.37,153.69,142.71,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-11 22:25:13,LIVE,2026-06-11 22:25:13,SMCI,Volatility Compression Breakout,31.96,33.56,31.16,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-11 22:25:13,LIVE,2026-06-11 22:25:13,VST,Volatility Compression Breakout,146.37,153.69,142.71,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-12 16:48:36,LIVE,2026-06-12 16:48:36,SMCI,Dip Buy in Strong Uptrend,30.66,32.19,29.89,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
+2026-06-12 16:48:36,LIVE,2026-06-12 16:48:36,SNDK,High Tight Flag,2010.0,2110.5,1959.75,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-12 16:48:36,LIVE,2026-06-12 16:48:36,UCTT,High Tight Flag,109.75,115.24,107.01,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
