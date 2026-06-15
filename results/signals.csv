@@ -395,3 +395,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-12 22:59:45,LIVE,2026-06-12 22:59:45,DASH,Volatility Compression Breakout,150.56,158.09,146.8,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-12 22:59:45,LIVE,2026-06-12 22:59:45,BABA,Volatility Compression Breakout,112.79,118.43,109.97,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-15 15:51:27,LIVE,2026-06-15 15:51:27,ASTS,Temporarily Devalued Quality,85.17,89.42,83.04,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-15 19:52:44,LIVE,2026-06-15 19:52:44,STX,High Tight Flag,1011.62,1062.2,986.33,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-15 19:52:44,LIVE,2026-06-15 19:52:44,WDC,High Tight Flag,654.12,686.83,637.77,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
