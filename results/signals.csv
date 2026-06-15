@@ -397,3 +397,8 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-15 15:51:27,LIVE,2026-06-15 15:51:27,ASTS,Temporarily Devalued Quality,85.17,89.42,83.04,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
 2026-06-15 19:52:44,LIVE,2026-06-15 19:52:44,STX,High Tight Flag,1011.62,1062.2,986.33,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
 2026-06-15 19:52:44,LIVE,2026-06-15 19:52:44,WDC,High Tight Flag,654.12,686.83,637.77,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-15 22:23:47,LIVE,2026-06-15 22:23:47,STX,High Tight Flag,1018.86,1069.8,993.39,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-15 22:23:47,LIVE,2026-06-15 22:23:47,WDC,High Tight Flag,653.8,686.49,637.45,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-15 22:23:47,LIVE,2026-06-15 22:23:47,WDC,Volatility Compression Breakout,653.8,686.49,637.45,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-15 22:23:47,LIVE,2026-06-15 22:23:47,PANW,Volatility Compression Breakout,284.56,298.79,277.45,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-15 22:23:47,LIVE,2026-06-15 22:23:47,NFLX,Volatility Compression Breakout,81.67,85.75,79.63,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
