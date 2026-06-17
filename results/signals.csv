@@ -409,3 +409,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-16 22:01:56,LIVE,2026-06-16 22:01:56,VLO,Oversold Bounce,244.27,254.04,236.94,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-16 22:01:56,LIVE,2026-06-16 22:01:56,SPOT,Oversold Bounce,469.74,488.53,455.65,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-16 22:01:56,LIVE,2026-06-16 22:01:56,SPOT,Volatility Compression Breakout,469.74,493.23,458.0,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-17 22:06:12,LIVE,2026-06-17 22:06:12,SPOT,Failed Breakdown Reversal,455.71,478.5,442.04,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
