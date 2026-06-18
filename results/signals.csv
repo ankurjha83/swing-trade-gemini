@@ -435,3 +435,6 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-18 13:33:45,LIVE,2026-06-18 13:33:45,ENPH,Failed Breakdown Reversal,49.01,51.46,47.54,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-18 13:33:45,LIVE,2026-06-18 13:33:45,SMTC,Failed Breakdown Reversal,152.23,159.84,147.66,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-18 13:33:45,LIVE,2026-06-18 13:33:45,QUBT,Oversold Bounce,10.21,10.62,9.9,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-18 19:41:02,LIVE,2026-06-18 19:41:02,FLNC,Early Trend Continuation,24.73,25.96,24.11,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-18 19:41:02,LIVE,2026-06-18 19:41:02,RKLB,Volatility Compression Breakout,106.54,111.87,103.88,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-18 19:41:02,LIVE,2026-06-18 19:41:02,BABA,Oversold Bounce,106.85,111.12,103.64,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
