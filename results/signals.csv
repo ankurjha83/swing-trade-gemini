@@ -534,3 +534,27 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-19 19:01:00,LIVE,2026-06-19 19:01:00,MELI,Failed Breakdown Reversal,1633.67,1715.35,1584.66,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-19 19:01:00,LIVE,2026-06-19 19:01:00,PDD,Volatility Compression Breakout,79.54,83.52,77.55,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-19 19:01:00,LIVE,2026-06-19 19:01:00,JD,Oversold Bounce,27.57,28.67,26.74,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,PLTR,Oversold Bounce,128.49,133.63,124.64,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,FLNC,Early Trend Continuation,24.75,25.99,24.13,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,SMR,Early Trend Continuation,11.71,12.3,11.42,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,SMR,High Tight Flag,11.71,12.3,11.42,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,SMR,Volatility Compression Breakout,11.71,12.3,11.42,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,ANET,Volatility Compression Breakout,169.65,178.13,165.41,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,LUMN,Volatility Compression Breakout,8.2,8.61,7.99,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,MDB,Volatility Compression Breakout,332.76,349.4,324.44,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,TEM,Volatility Compression Breakout,50.82,53.36,49.55,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,TSLA,Volatility Compression Breakout,400.43,420.45,390.42,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,MARA,Volatility Compression Breakout,14.23,14.94,13.87,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,QBTS,Volatility Compression Breakout,24.69,25.92,24.07,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,RGTI,Volatility Compression Breakout,21.35,22.42,20.82,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,ACHR,Volatility Compression Breakout,5.57,5.85,5.43,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,JOBY,Volatility Compression Breakout,9.98,10.48,9.74,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,ASTS,Volatility Compression Breakout,80.67,84.7,78.65,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,RKLB,Volatility Compression Breakout,107.3,112.67,104.62,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,SOFI,Volatility Compression Breakout,17.91,18.8,17.46,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,PSX,Oversold Bounce,166.1,172.74,161.12,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,CVE,Oversold Bounce,25.16,26.16,24.4,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,DASH,Volatility Compression Breakout,173.35,182.02,169.02,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,MELI,Failed Breakdown Reversal,1633.67,1715.35,1584.66,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,PDD,Volatility Compression Breakout,79.54,83.52,77.55,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-19 20:44:00,LIVE,2026-06-19 20:44:00,JD,Oversold Bounce,27.57,28.67,26.74,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
