@@ -628,3 +628,10 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-23 12:38:58,LIVE,2026-06-23 12:38:58,CVE,Volatility Compression Breakout,25.68,26.96,25.04,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-23 12:38:58,LIVE,2026-06-23 12:38:58,ABNB,Oversold Bounce,139.26,144.83,135.08,High,,,,,Recently oversold stock is reclaiming EMA20 with improving momentum.
 2026-06-23 12:38:58,LIVE,2026-06-23 12:38:58,APP,Volatility Compression Breakout,469.36,492.83,457.63,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,AMAT,Temporarily Devalued Quality,586.87,616.21,572.2,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,LRCX,Temporarily Devalued Quality,371.64,390.22,362.35,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,KLAC,Temporarily Devalued Quality,245.08,257.33,238.95,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,ALAB,Temporarily Devalued Quality,400.16,420.17,390.16,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,ASX,Temporarily Devalued Quality,39.83,41.83,38.84,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,GLW,Temporarily Devalued Quality,192.51,202.14,187.7,UNK,,,,,Stock has corrected meaningfully but is showing early stabilization.
+2026-06-23 18:04:46,LIVE,2026-06-23 18:04:46,UBER,Failed Breakdown Reversal,70.24,73.75,68.13,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
