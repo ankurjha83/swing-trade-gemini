@@ -722,3 +722,4 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-26 12:16:53,LIVE,2026-06-26 12:16:53,IONQ,Failed Breakdown Reversal,50.58,53.11,49.07,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-26 12:16:53,LIVE,2026-06-26 12:16:53,QBTS,Failed Breakdown Reversal,21.9,22.99,21.24,High,,,,,"Stock broke support, reclaimed it quickly, and momentum improved."
 2026-06-26 12:16:53,LIVE,2026-06-26 12:16:53,MPC,Volatility Compression Breakout,253.51,266.19,247.17,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-26 15:12:56,LIVE,2026-06-26 15:12:56,TEM,Early Trend Continuation,56.87,59.71,55.45,UNK,,,,,"Trend aligned, RSI healthy, volume confirmed, and momentum trigger active."
