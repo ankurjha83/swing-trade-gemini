@@ -753,3 +753,5 @@ run_timestamp,source,scan_timestamp,ticker,strategy,entry,target,stop,risk,senti
 2026-06-26 22:47:24,LIVE,2026-06-26 22:47:24,SE,Volatility Compression Breakout,91.32,95.89,89.04,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-26 22:47:24,LIVE,2026-06-26 22:47:24,JD,Volatility Compression Breakout,25.36,26.63,24.73,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
 2026-06-26 22:47:24,LIVE,2026-06-26 22:47:24,PYPL,Volatility Compression Breakout,44.3,46.51,43.19,Medium-High,,,,,"Volatility compressed, then price broke out with volume."
+2026-06-29 19:22:36,LIVE,2026-06-29 19:22:36,GLW,High Tight Flag,254.4,267.12,248.04,Medium-High,,,,,"Strong prior run, tight consolidation, volume contraction, and breakout."
+2026-06-29 19:22:36,LIVE,2026-06-29 19:22:36,HUT,Dip Buy in Strong Uptrend,118.87,124.81,115.9,Medium,,,,,Strong trend stock has pulled back and is showing a bounce.
